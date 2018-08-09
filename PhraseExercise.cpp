@@ -5,14 +5,14 @@
 using namespace std;
 
 int n;
-std::vector<char> naoRepetida(const std::string& s)
+vector<char> naoRepetida(const string& s)
 {
-	std::map<char, int> frequencia;
+	map<char, int> frequencia;
 	for (int i = 0; i<s.size(); i++)
 	{
 		frequencia[s[i]]++;
 	}
-	std::vector<char> deFora;
+	vector<char> deFora;
 	for (auto it = frequencia.begin(); it != frequencia.end(); it++)
 	{
 		if (it->second == 1)
